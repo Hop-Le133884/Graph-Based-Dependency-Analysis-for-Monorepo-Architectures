@@ -1,0 +1,30 @@
+{
+  "name": "dependency-analyzer",
+  "version": "1.0.0",
+  "description": "Graph-based dependency analyzer for JavaScript and Python projects",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "node src/index.js --sample --clear",
+    "analyze:circular": "node src/analysis/analyze.js --circular",
+    "analyze:circular-direct": "node src/analysis/analyze.js --circular-direct",
+    "analyze:stats": "node src/analysis/analyze.js --stats"
+  },
+  "keywords": [
+    "dependency",
+    "analyzer",
+    "neo4j",
+    "graph"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "neo4j-driver": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
