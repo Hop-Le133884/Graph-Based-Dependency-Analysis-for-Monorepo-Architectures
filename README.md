@@ -139,12 +139,19 @@ node src/index.js sample_projects/company_A/dataAnalytics
 # Find circular dependencies
 node src/analysis/analyze.js --circular
 
+![alt text](image-1.png)
+
 # Find version conflicts
 node src/analysis/analyze.js --conflicts
+
+![alt text](image-2.png)
 
 # Show statistics
 node src/analysis/analyze.js --circular-stats
 node src/analysis/analyze.js --conflict-stats
+
+![alt text](image-3.png)
+
 ```
 
 ## Usage
@@ -181,13 +188,18 @@ node src/analysis/analyze.js --circular
 # Find direct circular dependencies only (A ⟷ B)
 node src/analysis/analyze.js --circular-direct
 
+![alt text](image-4.png)
+
 # Show circular dependency statistics
 node src/analysis/analyze.js --circular-stats
 
 # Analyze specific project
 node src/analysis/analyze.js --project authService
-```
+
 ![alt text](image.png)
+
+```
+
 
 **Example output:**
 ```
