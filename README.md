@@ -89,7 +89,7 @@ Create a `.env` file in the project root:
 NEO4J_URI=bolt://localhost:7687
 NEO4J_USER=neo4j
 NEO4J_PASSWORD=your-password-here
-NEO4J_DATABASE=neo4j
+NEO4J_DATABASE=dependency-db
 ```
 
 **Alternative: System environment variables**
@@ -97,7 +97,7 @@ NEO4J_DATABASE=neo4j
 # Add to ~/.bashrc or ~/.zshrc
 export NEO4J_URI=bolt://localhost:7687
 export NEO4J_PASSWORD=your-password-here
-export NEO4J_DATABASE=neo4j
+export NEO4J_DATABASE=dependency-db
 ```
 
 Then reload:
