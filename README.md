@@ -1,4 +1,4 @@
-# Dependency Analyzer
+# Graph-Based Dependency Analysis for Monorepo Architectures
 
 A graph-based dependency analysis tool that parses projects and visualizes them in Neo4j. Supports multiple languages, with focus on JavaScript and Python. Perfect for analyzing monorepos, microservices, and internal package dependencies.
 
