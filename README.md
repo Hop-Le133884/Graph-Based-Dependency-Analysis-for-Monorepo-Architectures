@@ -56,7 +56,7 @@ A graph-based dependency analysis tool that parses projects and visualizes them 
 ### 1. Clone the Repository
 ```bash
 git clone <repository-url>
-cd dependency-analyzer
+cd Graph-Based-Dependency-Analysis-for-Monorepo-Architectures
 ```
 
 ### 2. Install Dependencies
