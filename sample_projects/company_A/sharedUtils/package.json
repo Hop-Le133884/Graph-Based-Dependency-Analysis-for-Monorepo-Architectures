@@ -1,0 +1,8 @@
+{
+  "name": "sharedUtils",
+  "version": "1.0.0",
+  "dependencies": {
+    "dataAnalytics": "^1.0.0",
+    "lodash": "^4.16.0"
+  }
+}
