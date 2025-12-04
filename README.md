@@ -69,8 +69,9 @@ npm install
 #### Option A: Neo4j Desktop (Recommended)
 
 1. Download and install [Neo4j Desktop](https://neo4j.com/download/)
-2. Create a new database:
-   - Name: `dependency-analyzer`
+2. Create an Instance Name: `dependency-analyzer`
+3. Create a new database:
+   - Name: `dependency-db`
    - Set a password
    - Click "Create"
 3. Start the database (click "Start" button)
