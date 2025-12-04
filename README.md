@@ -223,7 +223,9 @@ node src/analysis/analyze.js --conflicts
 
 # Show version conflict statistics
 node src/analysis/analyze.js --conflict-stats
-
+```
+![alt text](image-5.png)
+```bash
 # Check specific package
 node src/analysis/analyze.js --package express
 node src/analysis/analyze.js --package lodash
@@ -262,7 +264,7 @@ MATCH (p:Project)
 RETURN p.name, p.language, p.totalDependencies
 ORDER BY p.name
 ```
-
+![alt text](image-6.png)
 ### Visualize Dependencies
 ```cypher
 // Visualize all dependencies
@@ -274,7 +276,8 @@ LIMIT 50
 MATCH path = (pkg1:Package)-[:DEPENDS_ON]->(pkg2:Package)
 RETURN path
 ```
-
+![alt text](image-7.png)
+![alt text](image-8.png)
 ### Find Circular Dependencies
 ```cypher
 // Find all circular dependencies
@@ -282,7 +285,9 @@ MATCH path = (p:Package)-[:DEPENDS_ON*]->(p)
 WHERE length(path) > 1
 RETURN path
 LIMIT 10
-
+```
+![alt text](image-9.png)
+```cypher
 // Find only 2-way cycles
 MATCH path = (p:Package)-[:DEPENDS_ON*2]->(p)
 RETURN path
@@ -291,7 +296,7 @@ RETURN path
 MATCH path = (p:Package)-[:DEPENDS_ON*3]->(p)
 RETURN path
 ```
-
+![alt text](image-10.png)
 ### Find Version Conflicts
 ```cypher
 // Show all versions of a specific package
@@ -306,6 +311,7 @@ WHERE projectCount > 1
 RETURN packageName, projectCount
 ORDER BY projectCount DESC
 ```
+![alt text](image-11.png)
 
 ### Find Shared Dependencies
 ```cypher
@@ -315,7 +321,7 @@ WHERE projectCount > 1
 RETURN pkg.name, pkg.version, projectCount, projects
 ORDER BY projectCount DESC
 ```
-
+![alt text](image-12.png)
 ### Most Popular Packages
 ```cypher
 MATCH (proj:Project)-[:DEPENDS_ON]->(pkg:Package)
@@ -324,6 +330,7 @@ RETURN pkg.name, pkg.language, usageCount
 ORDER BY usageCount DESC
 LIMIT 10
 ```
+![alt text](image-13.png)
 
 ## Project Structure
 ```
